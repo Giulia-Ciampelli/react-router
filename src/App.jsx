@@ -1,4 +1,7 @@
 // #region importazioni
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+// pagine
 
 // stile
 import './App.css';
