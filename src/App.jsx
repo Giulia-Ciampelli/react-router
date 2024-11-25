@@ -2,6 +2,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 // pagine
+import Home from './pages/Home';
+import AboutUs from './pages/AboutUs';
 
 // layout
 import DefaultLayout from './pages/DefaultLayout';
@@ -10,11 +12,7 @@ import DefaultLayout from './pages/DefaultLayout';
 import './App.css';
 
 // componenti
-import Header from './components/Header';
 import Main from './components/Main';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import AboutUs from './pages/AboutUs';
 // #endregion importazioni
 
 function App() {
