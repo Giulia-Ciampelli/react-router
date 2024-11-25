@@ -14,6 +14,7 @@ import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
 import Home from './pages/Home';
+import AboutUs from './pages/AboutUs';
 // #endregion importazioni
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route element={<DefaultLayout />}>
             <Route path='/' element={<Home />} />
             <Route path='/posts' element={<Main />} />
+            <Route path='/about' element={<AboutUs />} />
           </Route>
         </Routes>
       </BrowserRouter>
