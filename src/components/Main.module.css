@@ -41,7 +41,7 @@ main {
                         gap: .5rem;
 
                         label {
-                            
+
                             input {
                                 margin-right: .5rem;
                             }
@@ -80,7 +80,8 @@ main {
                             display: flex;
                             flex-direction: column;
 
-                            h2, p {
+                            h2,
+                            p {
                                 line-height: 2rem;
                                 margin: 1rem;
                                 text-align: center;

@@ -24,6 +24,7 @@ body {
 a {
   text-decoration: none;
   color: var(--light-colour);
+  margin: 0 1rem;
 }
 
 /* #endregion common */
@@ -31,6 +32,9 @@ a {
 /* #region header */
 header {
   background-color: var(--violet-colour);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem;
 
   h1 {
@@ -39,6 +43,14 @@ header {
 }
 
 /* #endregion header */
+
+/* #region outlet */
+.vh {
+  min-height: 95vh;
+  padding: 1rem;
+}
+
+/* #endregion outlet */
 
 /* #region footer */
 footer {
