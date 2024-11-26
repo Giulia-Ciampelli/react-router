@@ -119,7 +119,6 @@ export default function Posts() {
         });
     }
 
-
     // funzione per cancellare post
     function handleTrashPost(slug) {
 

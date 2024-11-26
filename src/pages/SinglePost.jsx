@@ -39,7 +39,6 @@ export default function SinglePost() {
                 <h2>
                     {post.title}
                 </h2>
-                <div></div>
             </div>
             <img src={`http://localhost:3000/${post.image}`} alt={post.title} />
             <p>
