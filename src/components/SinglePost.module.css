@@ -1,0 +1,10 @@
+
+.single {
+
+    .tags {
+        background-color: var(--teal-colour);
+        border-radius: .5rem;
+        width: max-content;
+        margin: auto;
+    }
+}

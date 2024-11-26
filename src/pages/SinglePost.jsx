@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 // stile
-import style from "../components/Main.module.css";
+import style from "../components/SinglePost.module.css";
 
 export default function SinglePost() {
     const { slug } = useParams();
@@ -30,7 +30,7 @@ export default function SinglePost() {
     }
 
     return (
-        <div className={style.card}>
+        <div className={style.single}>
             <h2>
                 {post.title}
             </h2>
