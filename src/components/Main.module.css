@@ -1,6 +1,8 @@
 /* #region main */
 main {
-
+    min-height: 90vh;
+    padding: 1rem;
+    
     .container {
 
         .row {

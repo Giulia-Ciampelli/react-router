@@ -44,14 +44,6 @@ header {
 
 /* #endregion header */
 
-/* #region outlet */
-.vh {
-  min-height: 90vh;
-  padding: 1rem;
-}
-
-/* #endregion outlet */
-
 /* #region footer */
 footer {
   background-color: var(--dark-colour);
