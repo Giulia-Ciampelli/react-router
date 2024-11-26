@@ -1,5 +1,19 @@
 
 .single {
+    display: flex;
+    flex-direction: column;
+
+    h2,
+    p {
+        line-height: 2rem;
+        margin: 1rem;
+        text-align: center;
+    }
+
+    img {
+        width: 50%;
+        margin: auto;
+    }
 
     .tags {
         background-color: var(--teal-colour);
