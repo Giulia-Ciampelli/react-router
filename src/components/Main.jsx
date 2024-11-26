@@ -1,5 +1,5 @@
 // componenti
-import Posts from '../pages/Post';
+import PostList from '../pages/PostList';
 
 // modulo stile
 import style from '../components/Main.module.css';
@@ -10,7 +10,7 @@ export default function Main() {
         <main>
             <div className={style.container}>
                 <div className={style.row}>
-                    <Posts />
+                    <PostList />
                 </div>
             </div>
         </main>
