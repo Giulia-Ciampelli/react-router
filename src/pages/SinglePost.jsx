@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 // stile
@@ -8,6 +8,7 @@ export default function SinglePost() {
     const { slug } = useParams();
     const [post, setPost] = useState();
     const url = `http://localhost:3000/posts/${slug}`;
+    const navigate = useNavigate();
 
     // funzione fetch
     useEffect(() => {
@@ -31,9 +32,15 @@ export default function SinglePost() {
 
     return (
         <div className={style.single}>
-            <h2>
-                {post.title}
-            </h2>
+            <div className={style.title}>
+                <button onClick={() => navigate(-1)}>
+                    Torna ai post
+                </button>
+                <h2>
+                    {post.title}
+                </h2>
+                <div></div>
+            </div>
             <img src={`http://localhost:3000/${post.image}`} alt={post.title} />
             <p>
                 {post.content}
