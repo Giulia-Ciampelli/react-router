@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
+import { Link } from "react-router-dom";
 
 // modulo stile
 import style from '../components/Main.module.css';
@@ -316,9 +317,9 @@ export default function Posts() {
                         <h2>
 
                             {/* prova: aggiungi un modo per accedere allo slug giusto */}
-                            <a href={`http://localhost:3000/posts/${post.slug}`}>
+                            <Link to={`/posts/${post.slug}`}>
                                 {post.title}
-                            </a>
+                            </Link>
                         </h2>
                         <img src={`http://localhost:3000/${post.image}`} alt={post.title} />
                         <p>

@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import Posts from './pages/Posts';
+import SinglePost from './pages/SinglePost';
 
 // layout
 import DefaultLayout from './pages/DefaultLayout';
@@ -22,7 +23,8 @@ function App() {
         <Routes>
           <Route element={<DefaultLayout />}>
             <Route path='/' element={<Home />} />
-            <Route path='/posts' element={< Posts/>} />
+            <Route path='/posts' element={<Posts />} />
+            <Route path='/posts/:slug' element={<SinglePost />}/>
             <Route path='/about' element={<AboutUs />} />
           </Route>
         </Routes>
